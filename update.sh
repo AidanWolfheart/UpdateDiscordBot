@@ -1,3 +1,4 @@
+#  GNU nano 4.8                                                          update.sh                                                                     
 #!/bin/bash
 if [ $# -eq 0 ]
 then
@@ -7,7 +8,7 @@ else
         pkill -f 'java.*JMusicBot'
         ###
         echo "Downloading new version"
-        wget https://github.com/jagrosh/MusicBot/releases/download/$1/JMusicBot>
+        wget https://github.com/jagrosh/MusicBot/releases/download/$1/JMusicBot-$1-Linux.jar
         ###
         echo "Removing older version"
         rm JMusicBot.jar
@@ -16,3 +17,4 @@ else
         mv JMusicBot-$1-Linux.jar JMusicBot.jar
         sh ./run.sh
 fi
+
