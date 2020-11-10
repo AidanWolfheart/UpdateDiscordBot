@@ -8,7 +8,7 @@ else
         pkill -f 'java.*JMusicBot'
         ###
         echo "Downloading new version"
-        wget https://github.com/jagrosh/MusicBot/releases/download/$1/JMusicBot-$1-Linux.jar
+        wget https://github.com/jagrosh/MusicBot/releases/download/$1/JMusicBot-$1.jar
         ###
         echo "Removing older version"
         rm JMusicBot.jar
